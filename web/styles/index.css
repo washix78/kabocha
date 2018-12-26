@@ -1,0 +1,44 @@
+body {
+  font-size: 0;
+}
+
+body::after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+}
+
+nav#left {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+nav#left > * {
+  font-size: medium;
+  position: relative;
+}
+
+nav#left ul > li:first-child {
+  font-weight: bold;
+}
+
+div#right {
+  bottom: 0;
+  left: 300px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div#right > * {
+  font-size: medium;
+}
+
+div#right > iframe[name="display"] {
+  height: 100%;
+  width: 100%;
+}
